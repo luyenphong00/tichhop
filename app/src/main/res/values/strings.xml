@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ThietKeBanh</string>
+    <string name="title_1">Thiết kế bánh theo phong cách của bạn</string>
+    <string name="sex">Giới Tính</string>
+    <string name="choose_color">Chọn màu</string>
+    <string name="msg_cancel">Hủy</string>
+    <string name="choose_color_cake">Chọn màu bánh của bạn</string>
+    <string name="choose_size_cake">Chọn kích cỡ bánh</string>
+    <string name="continue_txt">Tiếp tục</string>
+    <string name="start">Bắt đầu</string>
+    <string name="back_txt">Trở lại</string>
+    <string name="txt_choose_image">Chọn ảnh</string>
+    <string name="done">Xong</string>
+    <string name="reult">Kết quả</string>
+    <string name="good_cake">Chiếc bánh của bạn thật là đẹp</string>
+
+</resources>

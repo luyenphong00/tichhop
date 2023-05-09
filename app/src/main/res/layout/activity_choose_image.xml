@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.chooseimage.ChooseImageActivity">
+
+    <com.example.thietkebanh.ui.custom.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconLeft="@drawable/ic_search"
+        app:iconRight="@drawable/ic_menu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/layoutCake"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.example.thietkebanh.ui.custom.CustomCake
+            android:id="@+id/cake"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/AppTheme.Text.H2"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:background="@drawable/bg_border_27dp"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/padding_10"
+        android:paddingVertical="@dimen/padding_8"
+        android:text="@string/txt_choose_image"
+        android:layout_margin="@dimen/default_padding"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCake" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChooseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:spanCount="3"
+        tools:layout_editor_absoluteX="0dp"
+        tools:listitem="@layout/item_choose_image" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        style="@style/AppTheme.Text.H2"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:background="@drawable/bg_border_27dp"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/padding_10"
+        android:paddingVertical="@dimen/padding_8"
+        android:text="Tiếp theo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvChooseImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
